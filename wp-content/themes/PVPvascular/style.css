@@ -1,0 +1,670 @@
+/*
+Theme Name: PVP Vascular Theme
+Author: Armada Medical
+Author URI: http://armadamedical.com
+Description: Theme for PVP Vascular
+*/
+
+/* =Body */
+* {
+	margin:0;
+}
+html {
+	margin:0;
+	
+}
+html, body {
+	height:100%;
+	/* min-width:1024px; */
+
+}
+body,td,th {
+	font-family: "Verdana", Geneva, sans-serif;
+	font-size: 12px;
+	color: #414042;
+}
+body {
+	margin:0;
+	background: url(images/page-content-bkg.jpg) top center no-repeat ;
+
+}
+body.home {
+	margin:0;
+	background: url(images/page-content-bkg-home.jpg) top center no-repeat;
+
+}
+a:link {
+	color: #005696;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #999;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+h1 {
+	font-size: 16px;
+	color: #1c4469;
+	font-weight:bold;
+	font-style:italic;
+	margin: 0 0 10px;
+}
+h2 {
+	font-size: 13px;
+	color: #003161;
+	font-weight:bold;
+	margin: 0 0 15px;
+}
+h3 {
+	font-size: 12px;
+	color: #414042;
+	font-weight:bold;
+	margin: 0 0 15px;
+}
+p, ul, ol {
+	margin: 0 0 15px;
+}
+input,
+input[type="text"], input#s {
+	margin:0 0 10px;
+}
+input[type=submit] {
+	background:#1c4469;
+	color:#fff;
+	font-weight:bold;
+	border-radius:5px;
+	border:0;
+	padding:2px 7px 5px;
+}
+
+
+/* Header
+-------------------------------------------------------------- */
+#header {
+	height: 83px;
+}
+.header-container {
+	width:980px;
+	margin:auto;
+	position:relative;
+}
+
+#header .logo-text a {
+	text-decoration:none;
+	font-size:24px;
+	color: #005696;
+	position:relative;
+	top: 0px;
+	left:20px;
+}
+
+#main-menu {
+	display: block;
+	font-size:13px;
+	font-weight:bold;
+	float: none;
+	position:relative;
+	top: 4px;
+}
+
+#main-menu ul {
+	margin: 0; 
+	padding: 0; 
+	list-style: none;
+} 
+
+#main-menu li {
+	position: relative;
+	float:left; !important /* no spaces */
+	display:inline;
+	margin: 0 3%;
+    color: rgb(147, 164, 68);	
+}
+#main-menu li a {
+	display:inline-block;
+	width: auto;
+	height:38px;
+	line-height:36px;
+	padding:0 0 0 30px;
+	text-decoration:none;
+	color: rgb(147, 164, 68);
+	background:url(images/main-nav-bkg.png) no-repeat;
+	
+}
+#main-menu li a:hover {
+	background:url(images/main-nav-bkg-hvr.png) no-repeat;
+}
+
+#main-menu ul ul {
+	display: none;
+	float: left;
+	position: absolute;
+	top: 38px;
+	left:-11px;
+	z-index: 99999;
+	height:auto;
+	border:0;
+	
+}
+#main-menu ul ul ul {
+	/* left: 100%; */
+	top: 0;
+}
+#main-menu ul ul a {
+	color:#1c4469;
+	border-bottom:solid 1px #c7c8ca;
+	background:#efeff0;
+	height:45px;
+	line-height:44px;
+	font-size:12px;
+	padding:0 20px;
+}
+
+#main-menu ul ul :hover > a {
+	background: #dcddde;
+	border-bottom:solid 1px #c7c8ca;
+}
+#main-menu ul ul a:hover {
+	background: #dcddde;
+	border-bottom:solid 1px #c7c8ca;
+}
+#main-menu ul li:hover > ul {
+	display: block;
+}
+
+
+
+#call {
+	font-size:14px;
+	top:50px;
+	color:#002f5f;
+	font-weight:bold;
+	position:relative;
+	padding-right:45px;
+	float:right;
+}
+
+
+
+/* Page Template 
+-------------------------------------------------------------- */
+
+#page {
+	min-height: 100%;
+	width:980px;
+	margin:0 auto;
+	margin-bottom:-240px; /* bring footer up minus footer height */
+}
+
+#page:after {
+  content: "";
+  display: block;
+}
+
+#primary {
+	float: right;
+	width:730px;
+}
+#content {
+	margin:0 20px 0px 0;
+	padding:0; 
+}
+
+.entry-header h1 {
+	font-size: 32px;
+	color: #FFF;
+	font-weight:normal;
+	font-style:normal;
+	margin: 15px 15px 120px;
+	text-shadow:4px 4px 2px #333;
+} 
+.entry-title {
+	font-size: 32px;
+	color: #FFF;
+	font-weight:normal;
+	font-style:normal;
+	margin: 15px 15px 120px;
+	text-shadow:4px 4px 2px #333;
+} 
+.entry-content h1 {
+	font-size: 32px;
+	color: #FFF;
+	font-weight:normal;
+	font-style:normal;
+	margin:20px 0 30px;
+	padding:0;
+	text-shadow:4px 4px 2px #333;
+}
+.entry-content {
+	margin-top:-15px;
+	padding-bottom: 3em;
+}
+#main {
+	/* width:980px;
+	margin:0 auto; */
+}  
+.page-template-full-width-page-php #main {
+	overflow: hidden;
+}
+#main .widget-area {
+	float: left;
+	overflow: hidden;
+	width: 200px;
+	padding: 0 15px 15px;
+	margin-top:-11px;
+} 
+.widget form input[type=text],
+.widget form input[type=password] {
+	width: 95%;
+}
+.widget input[type="submit"] {
+	float:right;
+	margin-right:15px;
+}
+.page-template-full-width-page-php #main .widget-area {
+	width: 600px;
+	margin-left: -300px;
+	padding-top: 300px;
+}
+.page-template-full-width-page-php #main .widget-area .widget {
+	float:left;
+	width: 230px;
+	margin: 0 0 15px 35px;
+}
+.page-template-full-width-page-php #main .widget-area {
+	width: 600px;
+	margin-left: -300px;
+	padding-top: 300px;
+}
+.page-template-full-width-page-php #main .widget-area .widget {
+	float:left;
+	width: 235px;
+	margin: 0 0 15px 30px;
+}
+
+
+#fullpage {
+	padding:0 0 240px 20px;
+	
+}
+
+
+/* Increase the size of the content area for templates without sidebars */
+.full-width #content,
+.image-attachment #content,
+.error404 #content {
+	margin: 0;
+}
+
+/* Text meant only for screen readers */
+.screen-reader-text,
+.assistive-text {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* Alignment */
+.alignleft {
+	display: inline;
+	float: left;
+}
+.alignright {
+	display: inline;
+	float: right;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+/* =Content
+-------------------------------------------------------------- */
+
+.homecopy {
+	display:inline-block;
+	width:350px;
+	padding-top:30px;
+}
+
+.sticky {
+}
+.entry-meta {
+	clear: both;
+	display: block;
+}
+.single-author .entry-meta .byline {
+	display: none;
+}
+#content nav {
+	display: block;
+	overflow: hidden;
+}
+#content nav .nav-previous {
+	float: left;
+	width: 50%;
+}
+#content nav .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+#content #nav-above {
+	display: none;
+}
+.paged #content #nav-above,
+.single #content #nav-above {
+	display: block;
+}
+#nav-below {
+	margin: 0 0 0;
+}
+.page-link {
+	clear: both;
+	margin: 0 0 1em;
+}
+.page .edit-link {
+	clear: both;
+	display: block;
+}
+
+/* 404 page */
+.error404 .widget {
+	float: left;
+	width: 33%;
+}
+.error404 .widget .widgettitle,
+.error404 .widget ul {
+	margin-right: 1em;
+}
+.error404 .widget_tag_cloud {
+	clear: both;
+	float: none;
+	width: 100%;
+}
+
+/* Notices */
+.post .notice,
+.error404 #searchform {
+	background: #eee;
+	display: block;
+	padding: 1em;
+}
+
+/* Image Attachments */
+.image-attachment div.entry-meta {
+	float: left;
+}
+.image-attachment nav {
+	float: right;
+	margin: 0 0 1em 0;
+}
+.image-attachment .entry-content {
+	clear: both;
+}
+.image-attachment .entry-content .entry-attachment {
+	background: #eee;
+	margin: 0 0 1em;
+	padding: 1em;
+	text-align: center;
+}
+.image-attachment .entry-content .attachment {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* Aside Posts */
+.format-aside .entry-header {
+	display: none;
+}
+.single .format-aside .entry-header {
+	display: block;
+}
+.format-aside .entry-content,
+.format-aside .entry-summary {
+	padding-top: 1em;
+}
+.single .format-aside .entry-content,
+.single .format-aside .entry-summary {
+	padding-top: 0;
+}
+
+/* Gallery Posts */
+.format-gallery .gallery-thumb {
+	float: left;
+	margin: 0 1em 0 0;
+}
+
+/* Image Posts */
+.format-image .entry-header {
+	display: none;
+}
+.single .format-image .entry-header {
+	display: block;
+}
+.format-image .entry-content,
+.format-image .entry-summary {
+	padding-top: 0em;
+}
+.single .format-image .entry-content,
+.single .format-image .entry-summary {
+	padding-top: 0;
+}
+
+
+/* =Images
+-------------------------------------------------------------- */
+
+a img {
+	border: none;
+}
+p img {
+	margin-bottom: 0.5em; /* a small bottom margin prevents content floating under images */
+}
+/*
+Resize images to fit the main content area.
+- Applies only to images uploaded via WordPress by targeting size-* classes.
+- Other images will be left alone. Use "size-auto" class to apply to other images.
+*/
+img.size-auto,
+img.size-full,
+img.size-large,
+img.size-medium,
+.attachment img,
+.widget-area img,
+.wp-caption {
+	max-width: 100%; /* When images are too wide for containing element, force them to fit. */
+	height: auto; /* Override height to match resized width for correct aspect ratio. */
+}
+img.alignleft {
+	margin-right: 1em;
+}
+img.alignright {
+	margin-left: 1em;
+}
+.wp-caption {
+	padding: .5em;
+	text-align: center;
+}
+.wp-caption img {
+	margin: .25em;
+}
+.wp-caption .wp-caption-text {
+	margin: .5em;
+}
+.gallery-caption {
+}
+.wp-smiley {
+	margin: 0;
+}
+
+
+/* =Forms
+-------------------------------------------------------------- */
+
+.thanks {
+	background:#dcddde;
+	border:1px solid #c7c8ca;
+	padding:15px;
+	text-align:center;
+	display:block;
+	width:300px;
+	margin-top:20px
+}
+#searchform label {
+	display: none;
+}
+textarea {
+	width: 80%;
+}
+
+/* Class for labelling required form items */
+.required {
+	color: #cc0033;
+}
+
+
+/* =Comments
+-------------------------------------------------------------- */
+
+article.comment {
+	display: block;
+}
+#respond input[type=text] {
+	display: block;
+	width: 60%;
+}
+#respond textarea {
+	display: block;
+	margin: 0 0 1em;
+	width: 80%;
+}
+#respond .form-allowed-tags {
+	clear: both;
+	width: 80%;
+}
+#respond .form-allowed-tags code {
+	display: block;
+}
+
+
+/* =Widgets
+-------------------------------------------------------------- */
+
+
+.widget-area .widget_search {
+	overflow: hidden;	
+}
+.widget-area .widget_search input {
+	float: left;
+}
+
+#secondary h1 {
+	font-size: 13px;
+	font-style:normal;
+	margin:0;
+	padding:0;
+	height:35px;
+	border-bottom:solid 1px #c7c8ca;
+}
+#secondary ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#secondary li{
+	margin: 0;
+	padding: 15px 0 15px 20px;
+	font-size: 13px;
+	font-weight:bold;
+	border-bottom:solid 1px #c7c8ca;
+}
+#secondary a:link, #secondary a:visited {
+	color: #005696;
+
+}
+
+
+/* =Footer
+-------------------------------------------------------------- */
+
+
+#footer-area {
+	clear:both; 
+	display:block;
+	width:100%;
+	height:240px; 
+	background:#dcddde;
+	margin:0;
+	padding:0;
+}
+#footer-bar {
+	background: #c7c8ca;
+	height:1px;
+	
+}
+	
+#footer-container {
+	width:980px;
+	margin:0 auto;
+	padding:15px 0 15px 32px;
+	font-size:10px;
+	position:relative;
+	z-index:999;
+}
+	
+#footer-menu {
+	float:right;
+	margin-right:40px;
+	
+}
+#footer-menu ul {
+	margin: 0; 
+	padding: 0; 
+	list-style:none;
+} 
+
+#footer-menu li {
+	position: relative;
+	float:left; !important /* no spaces */
+	display:inline;
+	padding:0 0 5px 0;	
+}
+#footer-menu li a {
+	display:block;
+	width:140px;
+	text-decoration:none;
+	font-weight:bold;
+	color: #414042;
+}
+#footer-menu li a:hover {
+	text-decoration:underline;
+}
+#footer-menu ul ul {
+	position: absolute;
+	height:auto;
+	border:0;
+	padding:5px 0 0;
+}
+#footer-menu ul ul a {
+	font-weight:normal;
+	color: #414042;
+}
+#footer-social {
+	text-align:right;
+	margin-top:20px;
+}
+
+
+

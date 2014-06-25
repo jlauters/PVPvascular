@@ -1,0 +1,6 @@
+wp-config.php
+
+# Ignore everything in wp-content except plugins and themes
+wp-content/*
+!wp-content/plugins/
+!wp-content/themes/
